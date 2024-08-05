@@ -93,11 +93,10 @@ img {
 .parent {
     box-sizing: content-box;
     height: 100vh;
+    padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
 }
-
-
 
 @media (min-width: 720px) {
 
