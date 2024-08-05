@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+}
+
+#testimonialContainer {
+    padding: 75px 0px;
+}
+
+.testimonial {
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#testimonial1,#testimonial2,#testimonial4 {
+    color: white;
+}
+
+#testimonial3,#testimonial5 {
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+}
+
+
+#testimonial1 {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right 17% top;
+    background-size: 110px 110px;
+}
+
+#testimonial2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+#testimonial4 {
+    background-color: hsl(219, 29%, 14%);
+}
+
+img {
+    border-radius: 50%;
+    width: 35px;
+}
+
+#testimonial1 img {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#testimonial4 img {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.name,.verifiedGraduate,.details,.quote {
+    font-weight: 500;
+}
+
+.verifiedGraduate {
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.details {
+    line-height: 17px;
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    top: -3px;
+}
+
+.intro {
+    margin-top: 17px;
+    font-weight: 600;
+    font-size: 1.28rem;
+    line-height: 25px;
+
+}
+
+.quote {
+    margin-top: 20px;
+    opacity: 0.7;
+    line-height: 20px;
+}
+
+.parent {
+    box-sizing: content-box;
+    height: 100vh;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+@media (min-width: 720px) {
+
+    #testimonialContainer,#leftContainer,#top,#bottom,.parent {
+        display: flex;
+    }
+
+    #testimonialContainer {
+        max-width: 1175px;
+        height: 626;
+        margin: auto;
+        padding: 0px;
+    }
+
+    #testimonial5 {
+        min-width: 22.5%;
+    }
+
+    #leftContainer {
+        flex-direction: column;
+        min-width: 77.5%;
+    }
+
+    #leftContainer .testimonial {
+        margin-right: 20px;
+    }
+
+    #top,
+    #bottom {
+        min-width: 50%;
+    }
+
+    #testimonial1,
+    #testimonial4 {
+        min-width: 68.5%;
+    }
+
+    #testimonial2,
+    #testimonial3 {
+        min-width: 27%;
+    }
+
+}
